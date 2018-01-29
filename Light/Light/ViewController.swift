@@ -12,6 +12,7 @@ class ViewController: UIViewController {
     
     var lightOn = true
     
+
     @IBOutlet weak var lightButton: UIButton!
     
     override func viewDidLoad() {
