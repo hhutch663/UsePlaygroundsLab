@@ -40,6 +40,7 @@ class OutfitDetailViewController: UIViewController {
     
     @IBOutlet weak var commentLabel: UILabel!
     
+    @IBOutlet weak var titleLabel: UILabel!
     
     
     override func viewDidLoad() {
