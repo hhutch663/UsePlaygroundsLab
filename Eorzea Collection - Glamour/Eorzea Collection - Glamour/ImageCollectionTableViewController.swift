@@ -57,12 +57,12 @@ class ImageCollectionTableViewController: UITableViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-       guard let vc = segue.destination as? OutfitDetailViewController, let glamCell = sender as? Glam else {
+       guard let vc = segue.destination as? OutfitDetailViewController, let glamCell = sender as? TitledImage else {
             return
 }
         vc.glamCell = glamCell
         vc.loadViewIfNeeded()
     }
     
-    let glams = [Glam(title: "Smooth Operator in Black", image: #imageLiteral(resourceName: "nelleOutfitBlack")), Glam(title: "Pretty in Pink", image: #imageLiteral(resourceName: "nelleHealOutfitPink")), Glam(title: "Nellethiel Medicus", image: #imageLiteral(resourceName: "nelleHealOutfitWhite")) ]
+    let glams = [TitledImage(title: "Smooth Operator in Black", image: #imageLiteral(resourceName: "nelleOutfitBlack")), TitledImage(title: "Pretty in Pink", image: #imageLiteral(resourceName: "nelleHealOutfitPink")), TitledImage(title: "Nellethiel Medicus", image: #imageLiteral(resourceName: "nelleHealOutfitWhite")) ]
 }

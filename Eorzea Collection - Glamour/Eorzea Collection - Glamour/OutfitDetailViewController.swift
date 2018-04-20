@@ -14,7 +14,7 @@ class OutfitDetailViewController: UIViewController {
     
     @IBOutlet weak var titleLabel: UILabel!
     
-    var glamCell: Glam?
+    var glamCell: TitledImage?
     
     
     override func viewDidLoad() {

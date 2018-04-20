@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0F000DFF208A26BE00583469 /* Glam.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F000DFE208A26BE00583469 /* Glam.swift */; };
+		0F000DFF208A26BE00583469 /* TitledImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F000DFE208A26BE00583469 /* TitledImage.swift */; };
 		0F0721F82087A1E200A0EAA4 /* OutfitDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F0721F72087A1E200A0EAA4 /* OutfitDetailViewController.swift */; };
 		0F092B1A2084F0FD004B943D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F092B192084F0FD004B943D /* AppDelegate.swift */; };
 		0F092B1F2084F0FD004B943D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F092B1D2084F0FD004B943D /* Main.storyboard */; };
@@ -29,7 +29,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0F000DFE208A26BE00583469 /* Glam.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Glam.swift; sourceTree = "<group>"; };
+		0F000DFE208A26BE00583469 /* TitledImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitledImage.swift; sourceTree = "<group>"; };
 		0F0721F72087A1E200A0EAA4 /* OutfitDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutfitDetailViewController.swift; sourceTree = "<group>"; };
 		0F092B162084F0FD004B943D /* Eorzea Collection - Glamour.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Eorzea Collection - Glamour.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F092B192084F0FD004B943D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -86,7 +86,7 @@
 				0F092B192084F0FD004B943D /* AppDelegate.swift */,
 				0F092B392084FE94004B943D /* ImageCollectionTableViewController.swift */,
 				0F092B3B2084FFB7004B943D /* ImageTableViewCell.swift */,
-				0F000DFE208A26BE00583469 /* Glam.swift */,
+				0F000DFE208A26BE00583469 /* TitledImage.swift */,
 				0F0721F72087A1E200A0EAA4 /* OutfitDetailViewController.swift */,
 				0F092B1D2084F0FD004B943D /* Main.storyboard */,
 				0F092B202084F0FD004B943D /* Assets.xcassets */,
@@ -208,7 +208,7 @@
 			files = (
 				0F0721F82087A1E200A0EAA4 /* OutfitDetailViewController.swift in Sources */,
 				0F092B3C2084FFB7004B943D /* ImageTableViewCell.swift in Sources */,
-				0F000DFF208A26BE00583469 /* Glam.swift in Sources */,
+				0F000DFF208A26BE00583469 /* TitledImage.swift in Sources */,
 				0F092B1A2084F0FD004B943D /* AppDelegate.swift in Sources */,
 				0F092B3A2084FE94004B943D /* ImageCollectionTableViewController.swift in Sources */,
 			);
