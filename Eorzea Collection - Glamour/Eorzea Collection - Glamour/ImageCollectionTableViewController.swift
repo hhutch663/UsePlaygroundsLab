@@ -32,7 +32,7 @@ class ImageCollectionTableViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 5
+        return glams.count
     }
 
 
@@ -40,58 +40,29 @@ class ImageCollectionTableViewController: UITableViewController {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "imageTableViewCell", for: indexPath) as? ImageTableViewCell else {
             return UITableViewCell()
         }
+        let glamCell = glams[indexPath.row]
         
-        cell.glamImage.backgroundColor = .blue
-        cell.nameOfGlam.text = "Test"
-        
-        
+        cell.nameOfGlam.text = glamCell.title
+        cell.glamImage.image = glamCell.image
 
         return cell
     }
 
-    /*
-    // Override to support conditional editing of the table view.
-    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the specified item to be editable.
-        return true
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print(glams)
+        
+        let glamCell = glams[indexPath.row]
+        
+        performSegue(withIdentifier: "showDetailView", sender: glamCell)
     }
-    */
-
-    /*
-    // Override to support editing the table view.
-    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
-        if editingStyle == .delete {
-            // Delete the row from the data source
-            tableView.deleteRows(at: [indexPath], with: .fade)
-        } else if editingStyle == .insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
-    }
-    */
-
-    /*
-    // Override to support rearranging the table view.
-    override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
-
-    }
-    */
-
-    /*
-    // Override to support conditional rearranging of the table view.
-    override func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the item to be re-orderable.
-        return true
-    }
-    */
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+       guard let vc = segue.destination as? OutfitDetailViewController, let glamCell = sender as? Glam else {
+            return
+}
+        vc.glamCell = glamCell
+        vc.loadViewIfNeeded()
     }
-    */
-
+    
+    let glams = [Glam(title: "Smooth Operator in Black", image: #imageLiteral(resourceName: "nelleOutfitBlack")), Glam(title: "Pretty in Pink", image: #imageLiteral(resourceName: "nelleHealOutfitPink")), Glam(title: "Nellethiel Medicus", image: #imageLiteral(resourceName: "nelleHealOutfitWhite")) ]
 }
