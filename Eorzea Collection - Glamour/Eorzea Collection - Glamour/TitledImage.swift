@@ -71,7 +71,7 @@ class Glam {
     var isDyeable: Bool
     var comment: String
     
-    init(mainImage: TitledImage, leftside: LeftSide, items: Items, jewelry: Jewelry, requiredLevel: Int, isDyeable: Bool, comment: String) {
+    init(mainImage: TitledImage, leftSide: LeftSide, items: Items, jewelry: Jewelry, requiredLevel: Int, isDyeable: Bool, comment: String) {
         self.mainImage = mainImage
         self.leftSide = leftSide
         self.items = items
