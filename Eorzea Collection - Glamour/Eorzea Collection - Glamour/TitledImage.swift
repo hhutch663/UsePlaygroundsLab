@@ -8,7 +8,7 @@
 
 import UIKit
 
-class TitledImage: NSObject {
+class TitledImage {
     var title: String
     var image: UIImage
     
@@ -18,7 +18,7 @@ class TitledImage: NSObject {
     }
 }
 
-class LeftSide: NSObject {
+class LeftSide {
     var head: TitledImage?
     var chest: TitledImage?
     var gloves: TitledImage?
@@ -36,7 +36,7 @@ class LeftSide: NSObject {
     }
 }
 
-class Items: NSObject {
+class Items {
     var weapon: TitledImage?
     var shield: TitledImage?
     
@@ -46,7 +46,7 @@ class Items: NSObject {
     }
 }
 
-class Jewelry: NSObject {
+class Jewelry {
     var earring: TitledImage?
     var necklace: TitledImage?
     var bracelet: TitledImage?
